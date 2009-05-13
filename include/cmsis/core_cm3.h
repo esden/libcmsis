@@ -297,7 +297,7 @@ typedef struct
   #define __NOP           __no_operation                              /*!< no operation intrinsic in IAR Compiler */
 
 #elif defined   (  __GNUC__  )
-  #define __ASM            asm                                        /*!< asm keyword for GNU Compiler          */
+  #define __ASM            __asm                                        /*!< asm keyword for GNU Compiler          */
   #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
 
 #endif
@@ -786,9 +786,9 @@ static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); 
 static __INLINE void __WFI()                      { __ASM volatile ("wfi");   }
 static __INLINE void __WFE()                      { __ASM volatile ("wfe");   }
 static __INLINE void __SEV()                      { __ASM volatile ("sev");   }
-static __INLINE void __ISB(arg)                   { __ASM volatile ("isb");   }
-static __INLINE void __DSB(arg)                   { __ASM volatile ("dsb");   }
-static __INLINE void __DMB(arg)                   { __ASM volatile ("dmb");   }
+static __INLINE void __ISB(int arg)               { __ASM volatile ("isb");   }
+static __INLINE void __DSB(int arg)               { __ASM volatile ("dsb");   }
+static __INLINE void __DMB(int arg)               { __ASM volatile ("dmb");   }
 static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
 
 

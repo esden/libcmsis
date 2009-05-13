@@ -28,7 +28,7 @@ NAME=libcmsis
 CC=${compiler_prefix}gcc
 AR=${compiler_prefix}ar
 AS=${compiler_prefix}as
-CFLAGS=-I../include -fno-common -Os -g -mcpu=cortex-m3 -mthumb -ffunction-sections -fdata-sections
+CFLAGS=-I../include -Wall -ansi -std=c99 -fno-common -Os -g -mcpu=cortex-m3 -mthumb -ffunction-sections -fdata-sections
 ARFLAGS=rcsv
 ASFLAGS=-ahls -mapcs-32
 

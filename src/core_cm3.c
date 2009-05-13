@@ -35,7 +35,7 @@
   #define __nop           __no_operation   /*!< no operation intrinsic in iarcc */
 
 #elif defined (  __GNUC__  )
-  #define __ASM             asm            /*!< asm keyword for gcc            */
+  #define __ASM             __asm          /*!< asm keyword for gcc            */
   #define __INLINE          inline         /*!< inline keyword for gcc         */
 #endif
 
