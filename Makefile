@@ -38,7 +38,7 @@ install:
 	install -d ${install_dir}/shared/doc/libcmsis/startup/arm
 	install -d ${install_dir}/shared/doc/libcmsis/startup/gcc
 	install -C include/cmsis/*.h ${install_dir}/include/cmsis
-	install -C src/libcmsis.a ${install_dir}/lib
+	install -C src/libcmsis.a ${install_dir}/lib/libcmsis.a
 	install -C doc/startup/iar/* ${install_dir}/shared/doc/libcmsis/startup/iar
 	install -C doc/startup/arm/* ${install_dir}/shared/doc/libcmsis/startup/arm
 	install -C doc/startup/gcc/* ${install_dir}/shared/doc/libcmsis/startup/gcc
