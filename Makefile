@@ -32,14 +32,14 @@ clean:
 	make -C src clean
 
 install:
-        install -d ${install_dir}/include/cmsis
-        install -d ${install_dir}/lib
-        install -d ${install_dir}/shared/doc/libcmsis/startup
-        install -d ${install_dir}/shared/doc/libcmsis/startup/iar
-        install -d ${install_dir}/shared/doc/libcmsis/startup/arm
-        install -d ${install_dir}/shared/doc/libcmsis/startup/gcc
-        install -C include/cmsis/*.h ${install_dir}/include/cmsis
-        install -C src/libcmsis.a ${install_dir}/lib/
-        install -C doc/startup/iar/* ${install_dir}/shared/doc/libcmsis/startup/iar
-        install -C doc/startup/arm/* ${install_dir}/shared/doc/libcmsis/startup/arm
-        install -C doc/startup/gcc/* ${install_dir}/shared/doc/libcmsis/startup/gcc
+	install -d ${install_dir}/include/cmsis
+	install -d ${install_dir}/lib
+	install -d ${install_dir}/shared/doc/libcmsis/startup
+	install -d ${install_dir}/shared/doc/libcmsis/startup/iar
+	install -d ${install_dir}/shared/doc/libcmsis/startup/arm
+	install -d ${install_dir}/shared/doc/libcmsis/startup/gcc
+	install -C include/cmsis/*.h ${install_dir}/include/cmsis
+	install -C src/libcmsis.a ${install_dir}/lib/
+	install -C doc/startup/iar/* ${install_dir}/shared/doc/libcmsis/startup/iar
+	install -C doc/startup/arm/* ${install_dir}/shared/doc/libcmsis/startup/arm
+	install -C doc/startup/gcc/* ${install_dir}/shared/doc/libcmsis/startup/gcc
